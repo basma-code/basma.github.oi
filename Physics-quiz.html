@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(54, 54, 205);
+            color: black;
+            transition: background-color 0.5s ease-in-out;
+        }
+        body:hover {
+            background-color: rgb(34, 34, 175);
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .quiz-container {
+            max-width: 1160px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1.2s ease-out;
+        }
+        .quiz-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .quiz-container form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .quiz-container label {
+            margin: 10px 0 5px;
+            transition: color 0.3s ease;
+        }
+        .quiz-container label:hover {
+            color: rgb(54, 54, 205);
+        }
+        .quiz-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: white;
+            color: rgb(54, 54, 205);
+            border: solid 1px rgb(54, 54, 205);
+            cursor: pointer;
+            border-radius: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .quiz-container button:hover {
+            background-color: rgb(54, 54, 205);
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .question-text input[type="radio"] + label {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .question-text input[type="radio"]:checked + label {
+            color: rgb(54, 54, 205);
+            transform: scale(1.1);
+        }
+        img {
+            display: inline-block;
+            width: 400px;
+            border-radius: 10px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        .separator {
+            border-top: 2px dashed #000;
+            margin: 20px 0;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+    
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        @keyframes slideIn {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Physics Quiz</h1>
+    </header>
+    <div class="quiz-container">
+        <h2>Test Your Physics Knowledge</h2>
+        <form>
+             
+             <div class="question">
+                <label for="q1">1. What is the formula for Newton's second law of motion?</label>
+                <div class="question-image">
+                    <img src="Designer (8).png" alt="Newton's Second Law">
+                    <img src="Designer (9).png" alt="Newton's Second Law">
+                </div>
+                <div class="question-text">
+                    <input type="radio" name="q1" id="q1a">
+                    <label for="q1a">a) F = ma</label><br>
+                    <input type="radio" name="q1" id="q1b">
+                    <label for="q1b">b) F = mv</label><br>
+                    <input type="radio" name="q1" id="q1c">
+                    <label for="q1c">c) F =m+a</label><br>
+                    <input type="radio" name="q1" id="q1d">
+                    <label for="q1d">d) F =m/a</label>
+                </div>
+            </div>
+            <div class="separator" > </div>
+            
+            <div class="question">
+                <label for="q2">2. What is the speed of light in a vacuum?</label>
+                
+                <div class="question-text">
+                    <input type="radio" name="q2" id="q2a">
+                    <label for="q2a">a) 3 x 10^8 m/s</label><br>
+                    <input type="radio" name="q2" id="q2b">
+                    <label for="q2b">b) 1 x 10^6 m/s</label><br>
+                    <input type="radio" name="q2" id="q2c">
+                    <label for="q2c">c) 3 x 10^6 m/s</label><br>
+                    <input type="radio" name="q2" id="q2d">
+                    <label for="q2d">d) 9 x 10^8 m/s</label>
+                </div>
+            </div>
+            <div class="separator" > </div>
+            
+            <div class="question">
+                <label for="q3">3. What is the unit of force in the International System of Units (SI)?</label>
+                <div class="question-text">
+                    <input type="radio" name="q3" id="q3a">
+                    <label for="q3a">a) Joule </label><br>
+                    <input type="radio" name="q3" id="q3b">
+                    <label for="q3b">b) Newton</label><br>
+                    <input type="radio" name="q3" id="q3c">
+                    <label for="q3c">c) Watt  </label><br>
+                    <input type="radio" name="q3" id="q3d">
+                    <label for="q3d">d) Pascal</label>
+                </div>
+            </div>
+            <div class="separator" > </div>
+            
+            <div class="question">
+                <label for="q4">4. What is the potential energy of an object at height h?</label>
+               
+                <div class="question-text">
+                    <input type="radio" name="q4" id="q4a">
+                    <label for="q4a">a) PE = mv^2</label><br>
+                    <input type="radio" name="q4" id="q4b">
+                    <label for="q4b">b) PE = mgh</label><br>
+                    <input type="radio" name="q4" id="q4c">
+                    <label for="q4c">c) PE = mgh^2</label><br>
+                    <input type="radio" name="q4" id="q4d">
+                    <label for="q4d">d) PE = 1/2mv^2</label>
+                </div>
+            </div>
+          <div class="separator" > </div>
+            
+            <div class="question">
+                <label for="q5">5. What does the term "Work" refer to in physics?</label>
+                <div class="question-text">
+                    <input type="radio" name="q5" id="q5a">
+                    <label for="q5a">a) Work = Force x Distance</label><br>
+                    <input type="radio" name="q5" id="q5b">
+                    <label for="q5b">b) Work = Force / Distance</label><br>
+                    <input type="radio" name="q5" id="q5c">
+                    <label for="q5c">c) Work = Force x Time</label><br>
+                    <input type="radio" name="q5" id="q5d">
+                    <label for="q5d">d) Work = Time x Distance</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit Answers</button>
+        </form>
+    </div>
+</body>
+</html>

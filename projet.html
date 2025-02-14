@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Topic Quiz Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       html , body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+           background-image: url(The\ Memphis\ Script\ _\ Saving\ Time\ in\ Motion.gif);
+           background-repeat: no-repeat;
+           background-size:100% 100%;
+           background-attachment: fixed;
+           display: flex; 
+           flex-direction: column;
+            height: 100%;
+           
+        }
+        #title{
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 80px;
+            
+            
+        }
+       
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+           
+        }
+        
+        .card {
+            
+            color: white;
+            display:flow-root;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            margin-top: 100px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+       
+        .card:hover {
+            transform: scale(1.2);
+        }
+        .card h3 {
+            font-size: 25px;
+            margin: 10px 0;
+            color:white;
+           
+        }
+        .card a {
+            text-decoration: none;
+            color:black;
+            background-color:white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            
+            display:inline;
+
+        }
+        .card a:hover {
+            background-color:rgb(68, 11, 87) ;
+            color: white;
+        }
+      #middle{
+        background:rgb(226, 226, 25) ;
+        
+      }
+      #first{
+        background:rgb(132,16,132)
+      }
+      #Third{
+        background:rgb(118,201,34);
+      }
+      #last{
+        background:rgb(54,54,205);
+      }
+       
+      footer {
+         text-align:right;
+         padding: 20px;
+        
+          color: white;
+         position:relative;
+         margin-bottom: 0px;
+          width: 100%;
+        
+             }
+   
+       nav {
+            color: white;
+            display: flex;
+            justify-content:left;
+            margin-left: 10px;
+        }
+        #home ,#contact ,#facebook , #yotube , #notification ,#instagram {
+            border-radius: 30px;
+            margin:30px;
+            font-size: 20px;
+           text-decoration: none;
+           padding: 20px;
+            color: white;
+        }
+       
+        nav a:hover {
+            text-decoration: none;
+            background-color:white ;
+        }
+    
+     #home:hover {
+        
+         color: #4e2ac3;
+    }
+
+    #contact:hover {
+       color: #45c4b7;
+    }
+
+    #facebook:hover {
+        color: #3b5998;
+    }
+
+    #yotube:hover {
+        background-color: #ff0000; 
+    }
+
+    #notification:hover {
+        color: #ff9800; 
+    }
+
+    #instagram:hover {
+        background:linear-gradient(#8d0b71 ,#ba77ab,rgb(255, 255, 0)) ; }
+
+     @media screen and (max-width: 890px) {
+        h1{
+        margin-left: 30px;
+        }
+     nav { 
+        display: block;
+        position: fixed;
+        background-color:white;
+        width:85px;
+        margin-left: -35px;
+        margin-top: -30px;
+        border-radius: 10px;
+        margin-right: 10px;
+        justify-content: center;
+        height: 550px;
+        animation: entrer 1s ease-out;
+     }
+     @keyframes entrer { 
+           from{
+            margin-left: -80px;
+            
+           }
+           to{
+            margin-left: -35px;
+            
+           }
+        }
+     nav a {
+        display:block; 
+         width: 5px;
+     }
+     #instagram, #yotube,#home,#contact,#facebook,#notification{
+        color:rgb(68, 11, 87);
+     }
+     
+     #instagram:hover{
+        color: violet;
+        background: none;
+
+     }
+     #yotube:hover {
+        background:none;
+        color: #ff0000;
+        
+    }
+    #home:hover {
+        background:none;
+        color: #4e2ac3;
+   }
+    
+   #contact:hover {
+      color:green;
+      background:none;
+   }
+  
+   #facebook:hover {
+       color: blue;
+       background:none;
+   }
+   #notification:hover {
+    color: burlywood;
+    background:none;
+    }
+    #hide{
+        display:none;
+    }
+    
+    #title{
+          margin-top: 30px; 
+            animation: enhaut 1s ease-out; 
+        }
+        @keyframes enhaut { 
+           from{
+            margin-top: 80px;
+            
+           }
+           to{
+            margin-top: 30px;
+            
+           }
+        }
+} 
+        
+
+    
+       
+    </style>
+</head>
+<body>
+   <header>
+     <div>
+        <nav>
+            <a href="projet.html" id="home"><i class="fa-solid fa-house"></i> <di id="hide"> Home</di> </a>
+            <a href="Contact.html" id="contact"><i  class="fa-solid fa-phone"></i>  <di id="hide" > Contact </di> </a>
+            <a href="#" id="notification"><i  class="fa-regular fa-bell"></i> </a>
+            <a href="https://fr-fr.facebook.com/" id="facebook"><i  class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.youtube.com/" id="yotube"><i  class="fa-brands fa-youtube"></i> </a>
+            <a href="https://www.instagram.com/" id="instagram" ><i  class="fa-brands fa-instagram"></i> </a>
+            
+        </nav>
+     </div>
+
+     
+   </header>
+       
+     <div id="title">
+        <h1>Welcome to the Multi-Topic Quiz Website!</h1>
+        <p>Choose a topic and test your knowledge!</p>
+    </div>
+    <div class="container">
+        <div class="card" id="first">
+            <h3>Coding Quiz</h3>
+            <p>you want to master coding?</p><br><br>
+            <a href="Coding-quiz.html">Start Quiz</a>
+        </div>
+
+        <div class="card" id="middle">
+            <h3>Science Quiz</h3>
+            <p>Are you a science legend?</p><br><br>
+            <a href="science-quiz.html">Start Quiz</a>
+        </div>
+
+        <div class="card" id="Third">
+            <h3>Maths Quiz</h3>
+            <p>Test your maths knowledge!</p><br><br>
+            <a href="Maths-quiz.html">Start Quiz</a>
+        </div>
+        <div class="card" id="last" >
+            <h3>Physics Quiz</h3>
+            <p>what's heavier 1kg cotton or 1kg iron !</p><br>
+            <a href="Physics-quiz.html">Start Quiz</a>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2024 Multi-Topic Quiz Website. All rights reserved.</p>
+</footer>
+</html>
+
+
+
+
+
+
+

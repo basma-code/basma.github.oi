@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths-quiz</title>
+    <style>
+        h1 {
+            font-size: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(118, 201, 34);
+            color: white;
+            transition: background-color 0.5s ease-in-out;
+        }
+        body:hover {
+            background-color: rgb(98, 181, 24);
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        form {
+            text-align: center;
+        }
+        .quiz-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.2s ease-out;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+            animation: fadeIn 1.8s ease-in-out;
+        }
+        .questions-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .question {
+            background-color: black;
+            border-radius: 20px;
+            padding: 80px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .question:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .question label {
+            display: block;
+            margin-bottom: 100px;
+            font-size: 25px;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        .question label:hover {
+            color: rgb(118, 201, 34);
+        }
+        .quiz-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: white;
+            color: rgb(118, 201, 34);
+            border: rgb(118, 201, 34) solid;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .quiz-container button:hover {
+            color: white;
+            text-decoration: none;
+            background-color: rgb(118, 201, 34);
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .question input {
+            padding: 10px;
+            width: 150px;
+            border-radius: 10px;
+            height: 20px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .question input:focus {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Math Quiz</h1>
+    </header>
+    <form class="quiz-container">
+        <h2>Test Your Math Skills</h2>
+        <div class="questions-container">
+            <div class="question">
+                <label for="q1">1. What is 5 + 7?</label><br><br>
+                <input type="text" id="q1" name="q1" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q2">2. Solve: 9 × 8</label><br><br>
+                <input type="text" id="q2" name="q2" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q3">3. What is 144 ÷ 12?</label><br><br>
+                <input type="text" id="q3" name="q3" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q4">4. Simplify: 16 - 4 × 2</label><br><br>
+                <input type="text" id="q4" name="q4" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q5">5. Calculate the square of 7.</label><br><br>
+                <input type="text" id="q5" name="q5" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q6">6. What is the square root of 81?</label><br><br>
+                <input type="text" id="q6" name="q6" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q7">7. Solve: 18 + 36 ÷ 6</label><br><br>
+                <input type="text" id="q7" name="q7" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q8">8. What is 3³?</label><br><br>
+                <input type="text" id="q8" name="q8" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q9">9. Convert 1/2 to a decimal.</label><br><br>
+                <input type="text" id="q9" name="q9" required placeholder="Your response">
+            </div>
+            <div class="question">
+                <label for="q10">10. Calculate the area of a rectangle with length 10 and width 5.</label><br>
+                <input type="text" id="q10" name="q10" required placeholder="Your response">
+            </div>
+        </div>
+        <button type="submit">Submit Answers</button>
+    </form>
+</body>
+</html>

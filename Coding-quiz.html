@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding-quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(132, 16, 132);
+            color: white;
+        }
+    
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(132, 16, 132);
+            color: white;
+        }
+    
+        .quiz-container {
+            max-width: 1290px;
+            margin: 30px auto;
+            color: black;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px;
+            background-color: white;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .quiz-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+    
+        .quiz-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .quiz-container form {
+            display: inline-block;
+        }
+    
+        .quiz-container label {
+            margin: 10px 0 5px;
+        }
+    
+        .quiz-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: white;
+            color: rgb(105, 15, 137);
+            border: solid;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 200px;
+            margin-left: 43%;
+            margin-right: 43%;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+    
+        .quiz-container button:hover {
+            background-color: rgb(132, 16, 132);
+            color: white;
+            transform: scale(1.05);
+        }
+    
+        .border {
+            border: 6px gray solid;
+            width: 170px;
+            padding: 10px;
+            margin-top: 10px;
+            transition: border-color 0.3s ease;
+        }
+    
+        .border:hover {
+            border-color: rgb(132, 16, 132);
+        }
+        legend {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(132,16,132);
+        }
+    
+        #html,
+        #CSS,
+        #Python {
+            border-radius: 40px;
+            width: 28%;
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+    
+        #html:hover,
+        #CSS:hover,
+        #Python:hover {
+            transform: translateY(-10px);
+            
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+    
+        img {
+            width: 200px;
+            margin: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        #html {
+            background-color: #f8d7da;
+        }
+
+        #CSS {
+            background-color: #d1ecf1;
+        }
+
+        #Python {
+            background-color: #d4edda;
+        }
+
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coding Quiz</h1>
+    </header>
+    <div class="quiz-container">
+        <h2>Test Your Coding Knowledge</h2>
+        <form>
+
+   <fieldset id="html">
+       <legend>HTML </legend>
+          
+            
+            <label for="q1">1.What does HTML stand for?</label><br>
+            <input type="radio" name="q1">a)Hyper Text Markup Language.<br>
+            <input type="radio" name="q1">b)Home Tool Markup Language.<br>
+            <input type="radio" name="q1">c)Hyperlinks and Text Markup Language.<br>
+            <input type="radio" name="q1">d)Hyper Tool Markup Language.
+            <br><br>
+            <label for="q2">2.Which HTML element is used to define the title of a document?</label><br><br>
+            <input type="radio" name="q2"  >a)&lt;meta&gt;<br>
+            <input type="radio" name="q2"  >b)&lt;title&gt;<br>
+            <input type="radio" name="q2"   >c)&lt;head&gt;<br>
+            <input type="radio" name="q2"   >d)&lt;body&gt;
+              <br><br>
+            <label for="q3">3.How can you create an ordered list in HTML?</label><br><br>
+            <input type="radio" name="q3"  >a)&lt;ul&gt;<br>
+            <input type="radio" name="q3"  >b)&lt;ol&gt;<br>
+            <input type="radio" name="q3"   >c)&lt;li&gt;<br>
+            <input type="radio" name="q3"   >d)&lt;dl&gt;
+                 <br><br>
+            <label for="q4">4.What is the correct HTML element for inserting a line break?</label><br>
+            <input type="radio" name="q4"  >a)&lt;br&gt;<br>
+            <input type="radio" name="q4"  >b)&lt;lb&gt;<br>
+            <input type="radio" name="q4"   >c)&lt;break&gt;<br>
+            <input type="radio" name="q4"   >d)&lt;line&gt;
+                <br><br>
+            <label for="q5">5.Which attribute is used to provide an alternative text for an image, if the image cannot be displayed?</label><br><br>
+            <input type="radio" name="q5"  >a)title<br>
+            <input type="radio" name="q5"  >b)alt<br>
+            <input type="radio" name="q5"   >c)src<br>
+            <input type="radio" name="q5"   >d)href
+            <br><br>
+            
+            <label for="q6">6. Which tag is used to create a table in HTML?</label><br>
+            <input type="radio" name="q6" value="A"> &lt;table&gt;<br>
+            <input type="radio" name="q6" value="B"> &lt;tab&gt;<br>
+            <input type="radio" name="q6" value="C"> &lt;tr&gt;<br>
+            <input type="radio" name="q6" value="D"> &lt;tbody&gt;<br>
+                
+           
+         
+                
+            
+    </fieldset>
+    <fieldset id="CSS">
+        <legend>CSS</legend>
+         
+            <label for="q1">1.What does CSS stand for?</label><br>
+            <input type="radio" name="q1">a)Creative Style Sheets.<br>
+            <input type="radio" name="q1">b)Cascading Style Sheets.<br>
+            <input type="radio" name="q1">c)Computer Style Sheets.<br>
+            <input type="radio" name="q1">d)Colorful Style Sheets.
+            <br><br>
+            <label for="q2">2.Which property is used to change the background color of an element?</label><br>
+            <input type="radio" name="q2"  >a)color<br>
+            <input type="radio" name="q2"  >b)bgcolor<br>
+            <input type="radio" name="q2"   >c)background-color<br>
+            <input type="radio" name="q2"   >d)background;
+            <br><br>
+            <label for="q3">3.How do you add a comment in CSS?</label><br>
+            <input type="radio" name="q3"  >a)// this is a comment<br>
+            <input type="radio" name="q3"  >b)&lt;!-- this is a comment --&gt;<br>
+            <input type="radio" name="q3"   >c)/* this is a comment */<br>
+            <input type="radio" name="q3"   >d)# this is a comment
+            <br><br>
+            <label for="q4">4.Which CSS property controls the text size?</label><br>
+            <input type="radio" name="q4"  >a)font-style<br>
+            <input type="radio" name="q4"  >b)text-size<br>
+            <input type="radio" name="q4"   >c)font-size<br>
+            <input type="radio" name="q4"   >d)text-style
+            <br><br>
+            <label for="q5">5.How do you select an element with the id "header" in CSS?</label><br>
+            <input type="radio" name="q5"  >a).header<br>
+            <input type="radio" name="q5"  >b)#header<br>
+            <input type="radio" name="q5"   >c)header<br>
+            <input type="radio" name="q5"   >d)*header<br>
+            <label for="q6">6.what is this picture about? <br><img src="css-animation.jpg"></label><br>
+            <input type="radio" name="q6"  >a)transition<br>
+            <input type="radio" name="q6"  >b)position<br>
+            <input type="radio" name="q6"   >c)animation<br>
+            <input type="radio" name="q6"   >d)styling<br>
+    </fieldset>
+
+    <fieldset id="Python">
+        <legend>Python</legend>
+         
+            <label for="q1">1.What is the output of the following code? <br> <div class="border"> print("Hello" + "World") </div>  </label><br>
+            <input type="radio" name="q1">a)Hello World.<br>
+            <input type="radio" name="q1">b)HelloWorld.<br>
+            <input type="radio" name="q1">c)Hello+World.<br>
+            <input type="radio" name="q1">d)Error.
+            <br><br>
+            <label for="q2">2.Which of the following is a correct syntax to create a function in Python?</label><br>
+            <input type="radio" name="q2"  >a)def functionName():<br>
+            <input type="radio" name="q2"  >b)function functionName()<br>
+            <input type="radio" name="q2"   >c)create function functionName()<br>
+            <input type="radio" name="q2"   >d)functionName():
+            <br><br>
+            <label for="q3">3.What is the output of the following code?<br> <div class="border">x = [1, 2, 3] print(x[1]) </div>    </label><br>
+            <input type="radio" name="q3"  >a)1<br>
+            <input type="radio" name="q3"  >b)2<br>
+            <input type="radio" name="q3"   >c)3<br>
+            <input type="radio" name="q3"   >d)Error
+            <br><br>
+            <label for="q4">4.What is the output of the following code? <br> <div class="border">for i in range(3): print(i)</div></label><br>
+            <input type="radio" name="q4"  >a)0 1 2<br>
+            <input type="radio" name="q4"  >b)1 2 3<br>
+            <input type="radio" name="q4"   >c)0 1 2 3<br>
+            <input type="radio" name="q4"   >d)1 2 3 4
+            <br><br>
+            <label for="q5">5.What is the output of the following code?</label><br>
+            <input type="radio" name="q5"  >a)PYTHON<br>
+            <input type="radio" name="q5"  >b)python<br>
+            <input type="radio" name="q5"   >c)Python<br>
+            <input type="radio" name="q5"   >d)Error<br>
+    </fieldset>
+
+
+            <button type="submit">Submit Answers</button>
+        </form>
+    </div>
+</body>
+</html>

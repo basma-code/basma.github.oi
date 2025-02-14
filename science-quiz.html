@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>science-quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(226, 226, 25);
+            color: white;
+            transition: background-color 0.5s ease;
+        }
+        body:hover {
+            background-color: rgb(200, 200, 50);
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .quiz-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            background: whitesmoke;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+        .quiz-container h2 {
+            color: rgb(226, 226, 25);
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .quiz-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .quiz-container label {
+            margin: 10px 0 5px;
+            transition: color 0.3s ease;
+        }
+        
+        
+        .quiz-container input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            border: black solid 2px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .quiz-container input[type="text"]:focus {
+            border-color: rgb(226, 226, 25);
+            box-shadow: 0 0 10px rgb(226, 226, 25);
+        }
+        .quiz-container button {
+            margin-left: 40%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: white;
+            color: rgb(226, 226, 25);
+            border: solid;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+        .quiz-container button:hover {
+            color: white;
+            text-decoration: none;
+            background-color: rgb(226, 226, 25);
+            box-shadow: 5px 5px 5px gray;
+            transform: scale(1.1);
+        }
+        tr {
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+        td {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            border: black solid 3px;
+            padding: 40px;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        td:hover {
+            transform: translateY(-10px);
+            background-color: rgb(226, 226, 100);
+        }
+    
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Science Quiz</h1>
+    </header>
+    <div class="quiz-container">
+        <h2>Test Your Science Knowledge</h2>
+        
+            <table cellspacing=30 >
+                <tr> <td>
+            <label for="q1">1. What is the chemical symbol for water?</label><br><br><br><br>
+            <input type="text" id="q1" name="q1" required placeholder="Your response">
+                </td>
+                <td>
+            <label for="q2">2. What planet is known as the Red Planet?</label><br><br><br><br>
+            <input type="text" id="q2" name="q2" required placeholder="Your response">
+              </td>
+                </tr>
+            <tr>
+                <td>
+            <label for="q3">3. What is the basic unit of life?</label><br><br><br><br>
+            <input type="text" id="q3" name="q3" required placeholder="Your response">
+              </td>
+              <td>
+            <label for="q4">4. What is the speed of sound in air (approx. m/s)?</label><br><br><br><br>
+            <input type="text" id="q4" name="q4" required placeholder="Your response">
+              </td>
+             </tr> 
+             <tr>
+                <td>
+            <label for="q5">5. Who developed the theory of relativity?</label><br><br><br><br>
+            <input type="text" id="q5" name="q5" required placeholder="Your response">
+               </td>
+               <td>
+            <label for="q6">6. What is the primary gas found in Earth's atmosphere?</label><br><br><br><br>
+            <input type="text" id="q6" name="q6" required placeholder="Your response">
+             </td> </tr>
+             <tr>
+                <td>
+            <label for="q7">7. What is the pH value of a neutral substance?</label><br><br><br><br>
+            <input type="text" id="q7" name="q7" required placeholder="Your response">
+        </td>
+        <td>
+            <label for="q8">8. Which organ in the human body is responsible for pumping blood?</label><br><br><br><br>
+            <input type="text" id="q8" name="q8" required placeholder="Your response">
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="q9">9. What is the process plants use to make their food?</label><br><br><br><br>
+            <input type="text" id="q9" name="q9" required placeholder="Your response">
+        </td><td>
+            <label for="q10">10. What is the center of an atom called?</label><br><br><br><br>
+            <input type="text" id="q10" name="q10" required placeholder="Your response">
+        </td>
+        </tr>
+        </table>
+
+            <button type="submit">Submit Answers</button>
+        
+    </div>
+</body>
+</html>
